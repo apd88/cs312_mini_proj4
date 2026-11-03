@@ -19,7 +19,7 @@ if (window.confirm("Delete this post?") === false) {
     }  };
 
   if (posts.length === 0) {
-    return <p className="text-muted">No posts yet.</p>;
+    return <p className="nothing">No posts yet.</p>;
   }
   return (
  <div>

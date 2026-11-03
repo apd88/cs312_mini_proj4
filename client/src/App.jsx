@@ -30,7 +30,7 @@ function App() {
    if (user) {
     userArea = (
       <>
-        <span className="text-body-secondary small">Signed in as {user.name}</span>
+        <span className="text-body-secondary small"> {user.name}</span>
         <button className="btn btn-outline-secondary btn-sm" onClick={handleLogout}>
           Sign out
          </button>
@@ -48,13 +48,13 @@ function App() {
   return (
    <>
       <nav className="navbar bg-body-tertiary border-bottom">
-        <div className="container" style={{ maxWidth: "100px" }}>
+        <div className="container" style={{ maxWidth: "1000px" }}>
           <Link className="navbar-brand fw-bold" to="/"> Blog</Link>
-          <div className="d-flex align-items-center gap-2">{userArea}</div>
+          <div className="d-flex align-items-left gap-2">{userArea}</div>
         </div>
    </nav>
 
-{/* maybe i should add more routes later? */}
+{/* maybe i should do*/}
  <main className="container my-4" style={{ maxWidth: "899px" }}>
         <Routes>
       <Route path="/" element={<Home user={user} />} />

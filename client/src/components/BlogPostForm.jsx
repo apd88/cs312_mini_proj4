@@ -26,22 +26,22 @@ function BlogPostForm({ user, onPostCreated }) {
   return (
     <form onSubmit={handleSubmit} className="card card-body shadow-sm mb-4">
 
-      <h2 className="h4 mb-3">New post</h2>
+      <h2 className="h4 mb-4">New post</h2>
 
 
       <input 
-      className="form-control mb-3"
+      className="form-control mb-4"
        placeholder="Title"
         value={title}
              onChange={(e) => setTitle(e.target.value)} required />
 
 
-      <textarea className="form-control mb-3" rows="4" placeholder="Enter text"
+      <textarea className="form-control mb-4" rows="4" placeholder="Enter text"
                 value={content} onChange={(e) => setContent(e.target.value)} required />
 
       <button className="btn btn-primary align-self-start" type="submit">Post</button>
       {error
-       && <div className="alert alert-danger mt-3 mb-0">
+       && <div className="alert alert-danger mt-4 mb-4">
         {error}
         </div>}
     </form>

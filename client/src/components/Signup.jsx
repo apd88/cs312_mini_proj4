@@ -48,19 +48,19 @@ function Signup({ onLogin }) {
       <h2 className="mb-3">Sign up</h2>
 
       <input
-       className="form-control mb-3"
+       className="form-control mb-"
         placeholder="Name"
          value={name}
           onChange={handlenamec} />
 
       <input
-       className="form-control mb-3"
+       className="form-control mb-4"
         placeholder="User ID"
 value={userId}
  onChange={handleidc} />
 
       <input
-       className="form-control mb-3"
+       className="form-control mb-4"
         type="password"
          placeholder="Password"
              value={password}
@@ -70,7 +70,7 @@ value={userId}
 
    { error
 
-     && <div className="alert alert-danger mt-3 mb-0">
+     && <div className="alert mt-4 mb-4  ">
         {error}
         </div>
 }

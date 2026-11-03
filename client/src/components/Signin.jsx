@@ -7,13 +7,12 @@ function Signin({ onLogin }) {
   const [userId, setId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
+//same as signup
   function handleidc(e) {
     setId(e.target.value); }
 
   function handlepassc(e) {
     setPassword(e.target.value); }
-
   async function handlesubmit(e) {
     e.preventDefault(); 
     setError("");
@@ -56,7 +55,7 @@ function Signin({ onLogin }) {
   <button className="btn btn-primary" type="submit">  Sign in</button>
 
     {error &&
-     <div className="alert alert-danger mt-3 mb-0">
+     <div className="alert alert mt-3 mb-0">
       {error}
       </div>}
   </form> );

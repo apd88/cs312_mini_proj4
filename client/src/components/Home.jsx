@@ -41,6 +41,7 @@ function Home({ user }) {
         newList.push(posts[i]);
       }
     }
+    //update array to replace the existing posts with a new array that contains new posts
     setPosts(newList);
   }
   let formArea;
@@ -50,7 +51,7 @@ function Home({ user }) {
         onPostCreated={handlePostCreated}
     />;
 } else {
-    formArea = <div className="alert alert-info">
+    formArea = <div className="alert warning">
         Sign in to write a post.
     </div>;
 }
@@ -58,7 +59,7 @@ function Home({ user }) {
 return (
     <div>
         {formArea}
-        <h2 className="h5 text-body-secondary mb-3">
+        <h2 className="h5 text-body mb-3">
             Recent posts
         </h2>
         <PostList

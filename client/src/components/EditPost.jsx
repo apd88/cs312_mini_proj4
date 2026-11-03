@@ -49,7 +49,7 @@ return (
 
 
       {error &&
-       <div className="alert alert-danger mt-3 mb-0">
+       <div className="alert  mt-3 mb-0">
         {error}</div>}
     </form>
   );
