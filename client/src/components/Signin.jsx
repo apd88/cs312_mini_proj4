@@ -7,7 +7,7 @@ function Signin({ onLogin }) {
   const [userId, setId] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-//same as signup
+//maybe change names later since they are kind of confusing, fine for now though
   function handleidc(e) {
     setId(e.target.value); }
 
@@ -55,7 +55,7 @@ function Signin({ onLogin }) {
   <button className="btn btn-primary" type="submit">  Sign in</button>
 
     {error &&
-     <div className="alert alert mt-3 mb-0">
+     <div className="alert  mt-3 mb-4">
       {error}
       </div>}
   </form> );

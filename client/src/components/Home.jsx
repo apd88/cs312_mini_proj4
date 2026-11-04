@@ -18,7 +18,7 @@ function Home({ user }) {
     }, []);
   
 
-  function handlePostCreated(newPost) {
+  function handlepcreated(newPost) {
       setPosts([newPost].concat(posts));
       } 
   function handlepupdated(updatedPost) {
@@ -72,3 +72,5 @@ return (
 );
 }
 export default Home;
+
+//note for later: fix displaying time since it wont change on update
